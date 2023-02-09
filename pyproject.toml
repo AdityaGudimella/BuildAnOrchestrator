@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "borc"
+version = "0.1.0"
+description = "Build an Orchestrator Engine from scratch in multiple programming languages."
+authors = ["Aditya Gudimella <aditya.gudimella@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.scripts]
+borc = "borc.cli:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pillow = "^9.4.0"
+cairosvg = "^2.6.0"
+typer = "^0.7.0"
+gitpython = "^3.1.30"
+invoke = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
